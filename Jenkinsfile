@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+     tools {
+        nodejs 'nodejs-lts' 
+    }
+
     stages {
         stage('Install dependencies') {
             steps {
